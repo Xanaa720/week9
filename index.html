@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>반려동물, 사지말고 입양하세요</title>
+
+  <!-- ✅ 구글 폰트 추가 -->
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+  <style>
+    /* Daehan 폰트 적용 */
+    @font-face {
+        font-family: 'Daehan';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Daehan-Regular.woff') format('woff');
+        font-weight: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Daehan';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Daehan-Bold.woff') format('woff');
+        font-weight: 700;
+        font-display: swap;
+    }
+
+    /* 기본 리셋 */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* 기본 폰트: 고운돋움체 */
+    body { 
+      background: #fff; 
+      font-family: "Gowun Dodum", sans-serif; 
+    }
+
+    /* 공통 컨테이너 */
+    .container {
+      width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* 헤더 */
+    header .container {
+      background: seagreen;
+      color: beige;
+      text-align: center;
+      width: 800px;
+      margin: 40px auto 20px auto;
+      padding: 0 20px;
+      border-radius: 10px;
+
+      /* 수직 중앙 정렬 */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 200px;
+    }
+
+    /* 제목만 Daehan 폰트 적용 */
+    header h1, h2, h4 {
+      font-family: 'Daehan', "Gowun Dodum", sans-serif;
+    }
+
+    header h1 { font-size: 3rem; }
+
+    /* 섹션 */
+    section .container {
+      background: beige;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    h2 { font-size: 28px; font-weight: bold; margin-bottom: 6px; }
+    h4 { font-size: 1.3rem; margin-bottom: 6px; }
+    p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 6px; color: #222; font-family: "Gowun Dodum", sans-serif; }
+    .small { display: block; font-size: 0.95rem; color: #444; margin-top: 6px; }
+    .check { margin-left: 6px; display: block; }
+    img { width: 100%; max-width: 500px; display: block; margin-top: 10px; border-radius: 10px; }
+
+    /* 카드뉴스 버튼 스타일 */
+    .card-buttons {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .card-buttons div {
+      background: #72f0ff;
+      padding: 30px 40px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 10px;
+      flex: 1 1 30%;
+      font-family: 'Daehan', "Gowun Dodum", sans-serif;
+    }
+
+    /* footer */
+    footer {
+      background: #fff; 
+      padding: 40px 0;
+      text-align: center;
+    }
+    footer .container {
+      background: seagreen; 
+      color: beige;
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      text-align: center;
+      font-family: "Gowun Dodum", sans-serif;
+    }
+    footer p { color: beige; }
+  </style>
+</head>
+
+<body>
+
+  <!-- 헤더 -->
+  <header>
+    <div class="container">
+      <h1>반려동물, 사지말고 입양하세요.</h1>
+    </div>
+  </header>
+
+  <!-- 유기동물 통계 -->
+  <section>
+    <div class="container">
+      <h2>2024년 기준, 국내 유기동물 발생 수는 약 10만 7천 마리</h2>
+      <p>그중 절반 이상은 새 가족을 만나지 못합니다.</p>
+      <img src="graph1.png" alt="유기동물 통계 그래프">
+      <p class="small" style="text-align: right; margin-top: 4px;">출처: 농식품부</p>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>인도적 처리로 사망하는 유기동물, 매년 약 2만 마리</h2>
+      <p>보호소의 공간은 한정되어 있고, 들어오는 동물은 끊이지 않습니다.
+      먹이와 치료비, 봉사 인력까지 늘 부족합니다.</p>
+      <span class="small">시간이 지나면 안타깝게도 안락사 대상이 되기도 합니다.</span>
+      <img src="savegraph.png" alt="연도별 구조동물 보호관리 현황">
+      <p class="small" style="text-align: right; margin-top: 4px;">출처: 데일리벳</p>
+    </div>
+  </section>
+
+  <!-- 입양 의미 -->
+  <section>
+    <div class="container">
+      <h2>‘입양’은 진정한 가족이 되는 첫걸음!</h2>
+      <h4><span style="color: #F98510;">가족이 돼주라 내 집이 돼주라</span></h4>
+      <p>‘입양’의 법률적 의미는 법률 등의 절차를 통하여 친자관계를 형성하는 것입니다.</p>
+      <p>즉, 입양의 개념에서 바라본 반려동물은 소유권을 이전할 수 있는 물건이 아닌 살아있는 생물이자 가족의 구성원이라고 할 수 있습니다.</p>
+      <img src="adopt.jpg" alt="고양이와 여성">
+    </div>
+  </section>
+
+  <!-- 입양 체크리스트 -->
+  <section>
+    <div class="container">
+      <h2>입양 전, 꼭 체크하세요!</h2>
+      <h4><span style="color: #4caf50;">보호자 Check!</span></h4>
+      <p class="check">✅ 반려동물을 맞이할 환경적 준비, 마음의 각오는 되어 있습니까?</p>
+      <p class="check">✅ 한번 인연을 맺은 동물은 끝까지 책임지고 보살피겠다는 결심이 섰습니까?</p>
+      <p class="check">✅ 모든 가족과는 합의가 되었습니까?</p>
+      <p class="check">✅ 반려동물을 위해 공부할 각오는 되어있습니까?</p>
+      <p class="check">✅ 아플 때 적절한 치료를 제공해줄 수 있습니까?</p>
+      <p class="check">✅ 입양으로 인한 경제적 부담을 짊어질 의사와 능력이 있습니까?</p>
+      <p class="check">✅ 우리 집에서 키우는 다른 동물과 잘 어울릴 수 있을지 고민해보았습니까?</p>
+      <img src="checklist.png" alt="주의사항">
+    </div>
+  </section>
+
+  <!-- 입양 절차 -->
+  <section>
+    <div class="container">
+      <h2>입양 절차를 알아볼까요?</h2>
+      <h4><span style="color: #ff7f00;">새 가족 찾기 프로젝트</span></h4>
+      <p>1. 보호소 방문 및 상담</p>
+      <span class="small">보호소를 직접 방문해 동물의 건강 상태와 성격을 확인한다. 입양 전 상담을 통해 생활환경이 적합한지 함께 점검한다.</span>
+      <img src="step1.png" alt="1" style="width: 200px; border-radius: 10px;">
+
+      <p>2. 입양 신청서 작성</p>
+      <span class="small">입양을 희망하는 이유, 돌봄 계획 등을 자세히 적는다. 보호소는 이를 바탕으로 입양자의 책임감과 여건을 평가한다.</span>
+      <img src="step2.png" alt="2" style="width: 200px; border-radius: 10px;">
+
+      <p>3. 사전교육 및 면담</p>
+      <span class="small">반려동물 양육에 필요한 기본 지식과 주의사항을 이수한다. 입양 후 발생할 수 있는 문제를 예방하기 위한 단계이다.</span>
+      <img src="step3.png" alt="3" style="width: 200px; border-radius: 10px;">
+
+      <p>4. 입양 확정</p>
+      <span class="small">입양이 승인되면 책임있는 양육을 약속하는 서약서를 작성한다. 이후 필요한 서류 절차를 마치고, 새 가족을 맞이하게 된다!</span>
+      <img src="step4.png" alt="4" style="width: 200px; border-radius: 10px;">
+
+      <p>5. 사후관리</p>
+      <span class="small">보호소는 일정 기간 입양 가정을 방문하거나 연락을 통해 확인한다. 잘 적응하고 있는지, 돌봄 환경이 안정적인지 살펴보는 과정이다.</span>
+      <img src="step5.png" alt="5" style="width: 200px; border-radius: 10px;">
+    </div>
+  </section>
+
+  <!-- 반려동물 등록 제도 -->
+<section>
+  <div class="container">
+    <h4><span style="color: #ce0018;">인간을 호적에 올리듯</span></h4>
+    <h2>반려동물 등록은 필수!</h2>
+    
+    <p class="check"><strong>🔴 반려동물 등록 제도란?<br></strong>
+    반려동물을 가족으로 맞이했다면, ‘등록’은 첫 번째 의무! 주인을 잃은 반려동물을 쉽게 찾고, 유기나 학대를 예방하기 위한 제도.<br>
+    외장칩/내장칩의 형태로 위치를 파악할 수 있음</p>
+
+    <p class="check"><strong>🔴 등록 대상<br></strong>
+    2개월령 이상 개<br>
+    (2024년 기준 고양이 등록은 일부 지자체 시범 운영 중)</p>
+
+    <p class="check"><strong>🔴 등록 장소<br></strong>
+    동물병원, 구청 또는 지정된 동물등록대행기관</p>
+
+    <p class="check"><strong>🔴 등록하지 않으면?<br></strong>
+    미등록 시 최대 100만 원 이하의 과태료 부과. 또한 유실·유기 시 주인 확인이 어려워 구조·보호가 늦어질 수 있음.</p>
+     
+  </div>
+</section>
+
+
+  <!-- 반려동물 등록 카드뉴스 -->
+  <section>
+    <div class="container">
+      <h4 style="margin-bottom: 5px;"><span style="color: #1d7eff;">입양은 현실적으로 어려운데...</span></h4>
+      <h2 style="margin-top: 5px;">도울 수 있는 다른 방법은 없을까?</h2>
+      <div class="card-buttons">
+        <div>임시 보호</div>
+        <div>후원 또는 봉사 참여</div>
+        <div>캠페인 홍보</div>
+      </div>
+      <p class="small" style="text-align: center; margin-top: 20px;">작은 관심이 큰 변화를 만듭니다.</p>
+    </div>
+  </section>
+
+  <!-- 마무리 멘트 -->
+  <section>
+  <div class="container" style="background: #f5f5dc; text-align: center; padding: 30px; margin-bottom: 20px;">
+    <img src="respons.jpg" alt="마무리" style="display: block; margin: 0 auto; max-width: 500px; border-radius: 10px;">
+
+    <p style="font-size: 1.2rem; line-height: 1.8; color: #222; margin-top: 15px;">
+      반려동물 입양은 순간의 호기심이나 흥미로 결정하면 안됩니다.<br>
+      신중하게 마음을 다해 선택한 후에는, 끝까지 사랑과 관심으로 함께해 주세요.<br>
+      반려동물과 보호자는 서로에게 단 하나뿐인 존재입니다.
+    </p>
+  </div>
+</section>
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <p>디미디카드뉴스 &copy; 2025 김량현</p>
+    </div>
+  </footer>
+
+</body>
+</html>
